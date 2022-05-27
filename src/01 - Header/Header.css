@@ -12,9 +12,8 @@
 }
 
 .Header{
-    width: 100%;
-    height: 100%;
-    position: relative;
+    max-width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -46,11 +45,16 @@
 .Header-img {
     width: 100%;
     height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .Header-img img{
     width: 100%;
     height: 100%;
+    object-fit: cover; 
+    /* object-position: 0% -50%; */ 
+    filter: contrast(1.1);
 }
 
 .Grid-cards{
