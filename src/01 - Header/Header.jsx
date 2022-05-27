@@ -1,9 +1,28 @@
 import './Header.css'
+import HeaderSuperior from "../00 - img/header-superior.png"
+import IconSuperior from "../00 - img/icon-superior.png"
+import HeaderImg from "../00 - img/header.png"
+
 
 function Header(){
     return(
-        <header>
-            <p>Olá</p>
+        <header className='Header'>
+            <div className='Header-superior'>
+                <img src={IconSuperior} alt="" />
+                <img src={HeaderSuperior} alt="" />
+            </div>
+
+            <div className='Header-img'>
+                <img src={HeaderImg} alt="" />
+            </div>
+
+            <div className='Cards'>
+                <ul className='Grid-cards'>
+                    <li className='Item-card'></li>
+                    <li className='Item-card'></li>
+                    <li className='Item-card'></li>
+                </ul>
+            </div>
         </header>
     )
 }
