@@ -49,6 +49,13 @@
     height: 100%;
 }
 
+.Header-img img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    
+}
+
 .Grid-cards{
     position: relative;
     display: grid;
