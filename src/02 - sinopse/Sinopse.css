@@ -64,12 +64,20 @@
 }
 
 
-/* @media(max-width: 1280px){
-    
-} */
+@media(max-width: 1280px){
+    .Grid-sinopse .Img img{
+    }
+    .Grid-sinopse .Text p{
+        font-size: 2rem;
+    }
+}
 
 @media(max-width: 769px){
-    
+    .Grid-sinopse{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
 
 @media(max-width: 480px){
