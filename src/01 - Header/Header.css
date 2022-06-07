@@ -12,56 +12,32 @@
 }
 
 .Header{
+    position: relative;
     max-width: 100%;
     height: 100vh;
-}
-
-.Header-superior{
-   width: 50%;
-   float: right;
-   background: var(--color-yellow);
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
-   position: relative;
-}
-
-.Header-superior img:nth-child(1){
-    position: absolute;
-    margin-right: 500px;
-    height: 330px;
-    top: -100px;
-    transform: rotate(-10deg);
-    padding: 1.5rem;
-}
-
-.Header-superior img{
-    height: 150px;
-    padding: 1rem;
-    margin: 1rem;
+    margin-bottom: 300px;
 }
 
 .Header-img {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    background: #08948D;
 }
 
 .Header-img img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    /* object-position: 0% -50%; */ 
-    filter: contrast(1.1);
+    object-position: 0 center;
 }
 
 .Grid-cards{
     position: relative;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, minmax(100px, 300px));
-    grid-auto-rows: 125px;
+    grid-template-columns: repeat(3, minmax(200px, 600px));
+    grid-auto-rows: minmax(150px, 300px);
     gap: 2rem;
     padding: 1rem;
     transform: translateY(-50px);
@@ -87,39 +63,11 @@
     background-size: cover;
 }
 
-@media(max-width: 1280px){
-    .Header-superior img{
-        height: 80px;
-        padding: 0;
-        margin: 1rem;
-    }
-    .Header-superior img:nth-child(1){
-        margin-right: 350px;
-        height: 230px;
-        top: -80px;
-        transform: rotate(-9deg);
-        padding: 1.5rem;
-    }
+/* @media(max-width: 1280px){
     
-}
+} */
 
 @media(max-width: 769px){
-    .Header-superior{
-        width: 100%;
-        margin-bottom: 1px;
-    }
-    .Header-superior img{
-        height: 50px;
-        padding: 0;
-        margin: 1rem;
-    }
-    .Header-superior img:nth-child(1){
-        margin-right: 200px;
-        height: 200px;
-        top: -85 px;
-        transform: rotate(-9deg);
-        padding: 1.5rem;
-    }
     .Grid-cards .Item-card:nth-child(1){
         background-position: center -20px;
     }
@@ -134,9 +82,6 @@
 }
 
 @media(max-width: 480px){
-    .Header-superior img:nth-child(1){
-        display: none;
-    }
     .Grid-cards{
         grid-template-columns: 1fr;
         grid-auto-rows: 200px;

@@ -7,10 +7,6 @@ import HeaderImg from "../00 - img/header.png"
 function Header(){
     return(
         <header className='Header'>
-            <div className='Header-superior'>
-                <img src={IconSuperior} alt="" />
-                <img src={HeaderSuperior} alt="" />
-            </div>
 
             <div className='Header-img'>
                 <img src={HeaderImg} alt="" />
